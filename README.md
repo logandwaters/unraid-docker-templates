@@ -1,14 +1,17 @@
 # logandwaters' Unraid Docker Templates
-A collection of Docker container templates for Unraid Community Applications (https://unraid.net/community/apps) maintained by logandwaters, along with reference files and documentation for their creation and maintenance.
+A collection of Docker container templates for [Unraid Community Applications](https://unraid.net/community/apps) maintained by logandwaters, along with reference files and documentation for their creation and maintenance.
 
 ## Overview
 
-Templates Included:
+Templates Included:<br>
 • [File Browser](https://filebrowser.org/)
 
-Planned Additions:
+Planned Additions:<br>
 • [Open Hands](https://openhands.dev/)
 • [FlexGet](https://flexget.com/)
+
+Docmentation for Creating Templates:<br>
+• Coming Soon
 
 ---
 
@@ -16,11 +19,13 @@ Planned Additions:
 
 ## File Browser
 <img src="https://github.com/logandwaters/unraid-docker-templates/blob/main/filebrowser/icon.png?raw=true" alt="File Browser Icon" width="150" />
-File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users and each user can have its own directory.
+File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users and each user can have its own directory.<br><br>
 
 [Project Website](https://filebrowser.org/) • [File Browser GitHub](https://github.com/filebrowser/filebrowser) • [File Browser Template](./filebrowser/)
 
 *(Additional templates will be added soon covering AI apps, productivity tools, media apps, and more.)*
+
+---
 
 ## Contributing  
 I welcome suggestions for new templates or improvements to existing ones! Feel free to open an issue or submit a pull request if you encounter any bugs or have feedback.
