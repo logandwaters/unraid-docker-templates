@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/logandwaters/Plug-and-Play-Docker/refs/heads/main/profile/profile_picture.jpg</Icon>
+  <Profile>I mostly create custom templates for other software, following my Plug-and-Play (PnP) rules—designed to embody the simplicity Unraid apps should offer, with easy installation and minimal tinkering. While my focus is on templates, I also develop my own software occasionally. My goal is to streamline setup so users enjoy hassle-free experiences.</Profile>
+  <DonateLink>https://www.paypal.me/logandwateres</DonateLink>
+  <DonateText>I create software, templates, and tools—both for my projects and to complement others' work. If you find them useful, please consider donating to support my efforts. While I build templates for other software, remember to also support the original creators of the tools you enjoy!</DonateText>
+</Maintainer>

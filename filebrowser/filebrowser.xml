@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>FileBrowser-PNP</Name>
+  <Repository>filebrowser/filebrowser</Repository>
+  <Registry>https://hub.docker.com/r/filebrowser/filebrowser</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/filebrowser/filebrowser/issues</Support>
+  <Project>https://github.com/filebrowser/filebrowser</Project>
+  <Description>File Browser with a simplified one-click install.</Description>
+
+  <Overview>File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users and each user can have its own directory.&#xD;&#xD;
+This software was created by the File Browser Team. This container is pulled from the official File Browser repo and has been configured for simple one-click install with improved instructions and configs.&#xD;&#xD;
+Instructions:&#xD;
+1. Set desired webUI port (Default 8080).&#xD;
+2. Set the directory you wish to access from the WebUI.&#xD;
+3. Deploy!&#xD;
+4. On first launch, check the container logs for your randomly generated admin password.&#xD;
+5. Log in at the WebUI using the default username "admin" and the password from the logs.&#xD;
+6. Change the default password ASAP!&#xD;
+7. Enjoy!&#xD;&#xD;
+Part of the Plug-and-Play-Docker Repo set of apps by logandwaters.&#xD;&#xD;
+Helpful links Below.&#xD;&#xD;
+Official GitHub Repo: https://github.com/filebrowser/filebrowser&#xD;
+Official Docs: https://filebrowser.org/&#xD;
+Report Software Issues: https://github.com/filebrowser/filebrowser/issues&#xD;
+Report Container Template Issue: https://github.com/logandwaters/Plug-and-Play-Docker/issues</Overview>
+
+  <Requires>Before first deployment, run the following in the Unraid terminal to create the required paths and permissions:&#x0A;&#x0A;mkdir -p /mnt/user/appdata/FileBrowser-PNP&#x0A;touch /mnt/user/appdata/FileBrowser-PNP/filebrowser.db&#x0A;chown -R 1000:1000 /mnt/user/appdata/FileBrowser-PNP&#x0A;chmod -R 775 /mnt/user/appdata/FileBrowser-PNP</Requires>
+
+  <Category>Cloud: Productivity: Tools: Other: Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/logandwaters/Plug-and-Play-Docker/refs/heads/main/file_browser_pnp/file_browser_pnp.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/logandwaters/Plug-and-Play-Docker/refs/heads/main/file_browser_pnp/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+
+  <!-- Port Configuration -->
+  <Config Name="WebUI Port" Target="80" Default="8080" Description="Host port (Default 8080) mapped to container port 80 for UI access." Type="Port" Display="always" Required="true"/>
+
+  <!-- Volume Configuration -->
+  <Config Name="Path of Directory to Access" Target="/srv" Default="/mnt/user" Description="Directory to access within the UI." Type="Path" Display="always" Required="true"/>
+  <Config Name="Path to Config" Target="/config" Default="/mnt/user/appdata/FileBrowser-PNP" Description="Stores configuration and settings.json." Type="Path" Display="always" Required="true"/>
+  <Config Name="Path to Database File" Target="/database.db" Default="/mnt/user/appdata/FileBrowser-PNP/filebrowser.db" Description="Persistent database file for users and settings." Type="Path" Display="always" Required="true"/>
+
+  <!-- Environment Variables -->
+  <Config Name="File Browser Database Path" Target="FB_DATABASE" Default="/database.db" Description="Forces File Browser to use the mapped database file for persistence." Type="Variable" Display="always" Required="true"/>
+
+  <MySource>https://github.com/filebrowser/filebrowser</MySource>
+</Container>

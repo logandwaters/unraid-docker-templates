@@ -1,0 +1,11 @@
+# Ignore local working folder
+unpublished/
+
+# Ignore macOS / Windows junk
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files and backups
+*.tmp
+*.bak
+*.swp
