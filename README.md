@@ -18,10 +18,16 @@ Docmentation for Creating Templates:<br>
 # Included Templates
 
 ## File Browser
-<img src="https://github.com/logandwaters/unraid-docker-templates/blob/main/filebrowser/icon.png?raw=true" alt="File Browser Icon" width="150" />
+<img src="https://github.com/logandwaters/unraid-docker-templates/blob/main/filebrowser/icon.png?raw=true" alt="File Browser Icon" height="150" />
 File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users and each user can have its own directory.<br><br>
 
 [Project Website](https://filebrowser.org/) • [File Browser GitHub](https://github.com/filebrowser/filebrowser) • [File Browser Template](./filebrowser/)
+
+## Open Hands
+<img src="https://github.com/logandwaters/unraid-docker-templates/blob/main/openhands/icon.png?raw=true" alt="Open Hands Icon" height="150" />
+Code Less, Make More. Hand off your next task to OpenHands - the leading open source AI coding agent.<br><br>
+
+[Project Website](https://openhands.dev/) • [Open Hands GitHub](https://github.com/OpenHands/OpenHands) • [Open Hands Template](./openhands/)
 
 *(Additional templates will be added soon covering AI apps, productivity tools, media apps, and more.)*
 
