@@ -1,18 +1,29 @@
 # Logan Waters' Unraid Docker Templates
 A collection of Docker container templates for Unraid's [Community Applications](https://ca.unraid.net/apps) maintained by Logan Waters, along with my personal documentation and reference files for their creation and maintenance.
 
-## Index
-Templates Included:<br>
-• [File Browser](https://filebrowser.org/)
+Available Templates: [File Browser](#file-browser)
 
-# Included Templates
+# Template Index
 
 ## File Browser
-<img src="https://github.com/logandwaters/unraid-docker-templates/blob/main/filebrowser/icon.png?raw=true" alt="File Browser Icon" height="100" />
+<div align="center">
+  <!-- Icon -->
+  <img src="https://github.com/logandwaters/unraid-docker-templates/blob/main/filebrowser/icon.svg?raw=true" alt="File Browser Icon" height="100" />
 
-[Website](https://filebrowser.org/) • [Repository](https://github.com/filebrowser/filebrowser) • [Registry](https://hub.docker.com/r/filebrowser/filebrowser) • [Template Source](./filebrowser/filebrowser.xml) • [Published Template](https://ca.unraid.net/apps/filebrowser-pnp-0567vsk1joshd4)<br><br>
+  <!-- Links -->
+  <p>
+    <a href="https://filebrowser.org/">Website</a> | 
+    <a href="https://github.com/filebrowser/filebrowser">Repository</a> | 
+    <a href="https://hub.docker.com/r/filebrowser/filebrowser">Registry</a> | 
+    <a href="./filebrowser/filebrowser.xml">Template Source</a> | 
+    <a href="https://ca.unraid.net/apps/filebrowser-pnp-0567vsk1joshd4">Published Template</a>
+  </p>
 
-File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users where each user can have its own directory.
+  <!-- Description -->
+  <p>
+    File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users where each user can have its own directory.
+  </p>
+</div>
 
 # Contributing
 I welcome suggestions for new templates or improvements to existing ones! Feel free to open an issue or submit a pull request if you encounter any bugs or have feedback.
