@@ -8,7 +8,7 @@ Available Templates: [File Browser](#file-browser)
 ## File Browser
 <div align="center">
   <!-- Icon -->
-  <img src="https://github.com/logandwaters/unraid-docker-templates/blob/main/filebrowser/icon.svg?raw=true" alt="File Browser Icon" height="100" />
+  <img src="https://github.com/logandwaters/unraid-docker-templates/blob/main/filebrowser/logo.svg?raw=true" alt="File Browser Icon" height="100" />
 
   <!-- Links -->
   <p>
