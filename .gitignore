@@ -1,6 +1,9 @@
 # Ignore local working folder
 unpublished/
 
+# Ignore temp archive folder
+old/
+
 # Ignore macOS / Windows junk
 .DS_Store
 Thumbs.db
