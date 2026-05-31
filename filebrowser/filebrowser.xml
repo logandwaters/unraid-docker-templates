@@ -1,6 +1,13 @@
-<?xml version="1.0"?>
+<!-- Unraid Docker Container Template for File Browser by logandwaters -->
 <Container version="2">
-  <Name>FileBrowser-PNP</Name>
+  <Changes>
+  [b]2026-06-01:[/b] v1.2.0 - Migration to new template repo. Fixed lingering persistence issues & finalized all general chores.
+  [b]2025-10-21:[/b] v1.1.1 - Maintenance release fixing formatting and path issues.
+  [b]2025-10-21:[/b] v1.1.0 - Initial release of File Browser template.
+  </Changes>
+  <Beta>false</Beta>
+  <Category>Other: Productivity: Tools:</Category>
+  <Name>filebrowser</Name>
   <Repository>filebrowser/filebrowser</Repository>
   <Registry>https://hub.docker.com/r/filebrowser/filebrowser</Registry>
   <Network>bridge</Network>
@@ -9,45 +16,40 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/filebrowser/filebrowser/issues</Support>
   <Project>https://github.com/filebrowser/filebrowser</Project>
-  <Description>File Browser with a simplified one-click install.</Description>
-
-  <Overview>File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users and each user can have its own directory.&#xD;&#xD;
-This software was created by the File Browser Team. This container is pulled from the official File Browser repo and has been configured for simple one-click install with improved instructions and configs.&#xD;&#xD;
-Instructions:&#xD;
-1. Set desired webUI port (Default 8080).&#xD;
-2. Set the directory you wish to access from the WebUI.&#xD;
-3. Deploy!&#xD;
-4. On first launch, check the container logs for your randomly generated admin password.&#xD;
-5. Log in at the WebUI using the default username "admin" and the password from the logs.&#xD;
-6. Change the default password ASAP!&#xD;
-7. Enjoy!&#xD;&#xD;
-Part of the Plug-and-Play-Docker Repo set of apps by logandwaters.&#xD;&#xD;
-Helpful links Below.&#xD;&#xD;
-Official GitHub Repo: https://github.com/filebrowser/filebrowser&#xD;
-Official Docs: https://filebrowser.org/&#xD;
-Report Software Issues: https://github.com/filebrowser/filebrowser/issues&#xD;
-Report Container Template Issue: https://github.com/logandwaters/Plug-and-Play-Docker/issues</Overview>
-
-  <Requires>Before first deployment, run the following in the Unraid terminal to create the required paths and permissions:&#x0A;&#x0A;mkdir -p /mnt/user/appdata/FileBrowser-PNP&#x0A;touch /mnt/user/appdata/FileBrowser-PNP/filebrowser.db&#x0A;chown -R 1000:1000 /mnt/user/appdata/FileBrowser-PNP&#x0A;chmod -R 775 /mnt/user/appdata/FileBrowser-PNP</Requires>
-
-  <Category>Cloud: Productivity: Tools: Other: Status:Stable</Category>
+  <Description>A web-based file browser and manager for your files</Description>
+  <Overview>File Browser provides a file management interface within a specified directory and can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users where each can have its own directories, permissions & rules.&#xD;&#xD;
+  This software was created by the File Browser team & pulls from the official Docker registry. Please note, this project is in maintenance-only mode.&#xD;&#xD;
+  Install Instructions:&#xD;
+  1. Run the commands outlined under "Additional Requirements".&#xD;
+  2. Pull the container, set webUI port & directory for access, then deploy.&#xD;
+  3. On first launch, check container logs for the randomly generated admin password.&#xD;
+  4. Login to the webUI using the default username "admin" and the generated password.&#xD;
+  5. Changing the password immediately is highly recommended.&#xD;&#xD;
+  Helpful links:&#xD;
+  GitHub Repo: https://github.com/filebrowser/filebrowser&#xD;
+  Docker Registry: https://hub.docker.com/r/filebrowser/filebrowser&#xD;
+  Documentation: https://filebrowser.org/&#xD;
+  Report Software Issues: https://github.com/filebrowser/filebrowser/issues&#xD;
+  Report Container Template Issue: https://github.com/logandwaters/unraid-docker-templates/issues
+  </Overview>
+  <Requires>Before pulling the container, run the following in the Unraid terminal to create the required paths and permissions:&#x0A;&#x0A;mkdir -p /mnt/user/appdata/filebrowser&#x0A;touch /mnt/user/appdata/filebrowser/filebrowser.db&#x0A;chown -R 1000:1000 /mnt/user/appdata/filebrowser&#x0A;chmod -R 775 /mnt/user/appdata/filebrowser</Requires>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/logandwaters/Plug-and-Play-Docker/refs/heads/main/file_browser_pnp/file_browser_pnp.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/logandwaters/Plug-and-Play-Docker/refs/heads/main/file_browser_pnp/logo.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-
+  <TemplateURL>https://raw.githubusercontent.com/logandwaters/unraid-docker-templates/refs/heads/main/filebrowser/filebrowser.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/logandwaters/unraid-docker-templates/refs/heads/main/filebrowser/logo.svg</Icon>
   <!-- Port Configuration -->
   <Config Name="WebUI Port" Target="80" Default="8080" Description="Host port (Default 8080) mapped to container port 80 for UI access." Type="Port" Display="always" Required="true"/>
-
   <!-- Volume Configuration -->
-  <Config Name="Path of Directory to Access" Target="/srv" Default="/mnt/user" Description="Directory to access within the UI." Type="Path" Display="always" Required="true"/>
-  <Config Name="Path to Config" Target="/config" Default="/mnt/user/appdata/FileBrowser-PNP" Description="Stores configuration and settings.json." Type="Path" Display="always" Required="true"/>
-  <Config Name="Path to Database File" Target="/database.db" Default="/mnt/user/appdata/FileBrowser-PNP/filebrowser.db" Description="Persistent database file for users and settings." Type="Path" Display="always" Required="true"/>
-
+  <Config Name="Path of Directory to Access" Target="/srv" Default="/mnt/user" Description="Directory to access within the UI. (Customize as needed)" Type="Path" Display="always" Required="true"/>
+  <Config Name="Path to Config" Target="/config" Default="/mnt/user/appdata/filebrowser" Description="Stores configuration and settings.json." Type="Path" Display="always" Required="true"/>
+  <Config Name="Path to Database File" Target="/database.db" Default="/mnt/user/appdata/filebrowser/filebrowser.db" Description="Persistent database file for users and settings." Type="Path" Display="always" Required="true"/>
   <!-- Environment Variables -->
   <Config Name="File Browser Database Path" Target="FB_DATABASE" Default="/database.db" Description="Forces File Browser to use the mapped database file for persistence." Type="Variable" Display="always" Required="true"/>
-
+  <license>MIT License</license>
+  <Screenshot>https://raw.githubusercontent.com/logandwaters/unraid-docker-templates/refs/heads/main/filebrowser/screenshots/login.jpg</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/logandwaters/unraid-docker-templates/refs/heads/main/filebrowser/screenshots/user-mgmt.jpg</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/logandwaters/unraid-docker-templates/refs/heads/main/filebrowser/screenshots/interface.jpg</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/logandwaters/unraid-docker-templates/refs/heads/main/filebrowser/screenshots/file-editing.jpg</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/logandwaters/unraid-docker-templates/refs/heads/main/filebrowser/screenshots/commands.jpg</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/logandwaters/unraid-docker-templates/refs/heads/main/filebrowser/screenshots/customize.jpg</Screenshot>
   <MySource>https://github.com/filebrowser/filebrowser</MySource>
 </Container>
