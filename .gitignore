@@ -1,14 +1,2 @@
 # Ignore local working folder
 unpublished/
-
-# Ignore temp archive folder
-old/
-
-# Ignore macOS / Windows junk
-.DS_Store
-Thumbs.db
-
-# Ignore temporary files and backups
-*.tmp
-*.bak
-*.swp
