@@ -1,12 +1,16 @@
 # Logan Waters' Unraid Docker Templates
-A collection of Docker container templates for Unraid's [Community Applications](https://ca.unraid.net/apps) maintained by Logan Waters, along with my personal documentation and reference files for their creation and maintenance.
 
-Available Templates: [File Browser](#file-browser)
+A collection of Docker container templates for [Unraid's](https://unraid.net/) [Community Applications](https://ca.unraid.net/apps) maintained by Logan Waters, along with my personal documentation and reference files for their creation and maintenance. (coming soon)
 
-# Template Index
+## Template Index
 
-## File Browser
+> [!NOTE]
+> Available Templates: [File Browser](#file-browser)
+
 <div align="center">
+  <!-- Title -->
+  <h3> File Browser </h3>
+
   <!-- Icon -->
   <img src="https://github.com/logandwaters/unraid-docker-templates/blob/main/filebrowser/icon.png?raw=true" alt="File Browser Icon" height="100" />
 
@@ -25,16 +29,20 @@ Available Templates: [File Browser](#file-browser)
   </p>
 </div>
 
-# Contributing
-I welcome suggestions for new templates or improvements to existing ones! Feel free to open an issue or submit a pull request if you encounter any bugs or have feedback.
+## Policy
 
-# Donations
-I'm just making simple templates, if you would like to donate, please do so to the respective software developers.
-
-# Policy
 Unless otherwise noted, all templates reference container images hosted by the software developer's official repositories or container registries. Any exceptions will be clearly identified within the corresponding template documentation.
 
-# License
+## Contributing
+
+I welcome suggestions for new templates or improvements to existing ones! Feel free to open an issue or submit a pull request if you encounter any bugs or have feedback.
+
+## Donations
+
+I'm just making simple templates, if you would like to donate, please do so to the respective software developers.
+
+## License
+
 This repository and its contents are licensed under the open-source **MIT License**, permitting free use, modification, distribution, and collaboration.
 
 The software referenced by these templates remains the property of its respective owners. The templates provided here are for interoperability purposes only and **are not** affiliated with, endorsed by, or intended to infringe upon the rights of any software owner.
