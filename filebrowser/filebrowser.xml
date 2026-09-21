@@ -1,6 +1,7 @@
 <!-- Unraid Docker Container Template for File Browser by logandwaters -->
 <Container version="2">
   <Changes>
+  [b]2026-09-21:[/b] v1.3.0 - Update template details based on 2026-09-01 File Browser repository archival.
   [b]2026-06-01:[/b] v1.2.0 - Migration to new template repo. Fixed lingering persistence issues &amp; finalized all general chores.
   [b]2025-10-21:[/b] v1.1.1 - Maintenance release fixing formatting and path issues.
   [b]2025-10-21:[/b] v1.1.0 - Initial release of File Browser template.
@@ -9,14 +10,13 @@
   <Repository>filebrowser/filebrowser</Repository>
   <Registry>https://hub.docker.com/r/filebrowser/filebrowser</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/filebrowser/filebrowser/issues</Support>
   <Project>https://github.com/filebrowser/filebrowser</Project>
   <Description>A web-based file browser and manager for your files</Description>
   <Overview>File Browser provides a file management interface within a specified directory and can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users where each can have its own directories, permissions &amp; rules.&#xD;&#xD;
-This software was created by the File Browser team &amp; pulls from the official Docker registry. Please note, this project is in maintenance-only mode.&#xD;&#xD;
+This software was created by the File Browser team &amp; pulls from the official Docker registry. WARNING: This project was archived on 2026-09-01; it will no longer receive releases, bug fixes or security updates. Treat it as unmaintained software.&#xD;&#xD;
 Install Instructions:&#xD;
 1. Run the commands outlined under "Additional Requirements".&#xD;
 2. Pull the container, set webUI port &amp; directory for access, then deploy.&#xD;
@@ -26,11 +26,11 @@ Install Instructions:&#xD;
 Helpful links:&#xD;
 GitHub Repo: https://github.com/filebrowser/filebrowser&#xD;
 Docker Registry: https://hub.docker.com/r/filebrowser/filebrowser&#xD;
-Documentation: https://filebrowser.org/&#xD;
+Documentation: https://github.com/filebrowser/filebrowser/tree/master/docs&#xD;
 Report Software Issues: https://github.com/filebrowser/filebrowser/issues&#xD;
 Report Container Template Issue: https://github.com/logandwaters/unraid-docker-templates/issues</Overview>
   <Requires>Before pulling the container, run the following in the Unraid terminal to create the required paths and permissions:&#x0A;&#x0A;mkdir -p /mnt/user/appdata/filebrowser&#x0A;touch /mnt/user/appdata/filebrowser/filebrowser.db&#x0A;chown -R 1000:1000 /mnt/user/appdata/filebrowser&#x0A;chmod -R 775 /mnt/user/appdata/filebrowser</Requires>
-  <Category>Other: Productivity: Tools:</Category>
+  <Category>Productivity: Tools: Other:</Category>
   <Beta>false</Beta>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/logandwaters/unraid-docker-templates/main/filebrowser/filebrowser.xml</TemplateURL>
@@ -49,5 +49,4 @@ Report Container Template Issue: https://github.com/logandwaters/unraid-docker-t
   <Screenshot>https://raw.githubusercontent.com/logandwaters/unraid-docker-templates/main/filebrowser/screenshots/file-editing.jpg</Screenshot>
   <Screenshot>https://raw.githubusercontent.com/logandwaters/unraid-docker-templates/main/filebrowser/screenshots/commands.jpg</Screenshot>
   <Screenshot>https://raw.githubusercontent.com/logandwaters/unraid-docker-templates/main/filebrowser/screenshots/customize.jpg</Screenshot>
-  <MySource>https://github.com/filebrowser/filebrowser</MySource>
 </Container>
