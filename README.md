@@ -7,6 +7,8 @@ A collection of Docker container templates for [Unraid's](https://unraid.net/) [
 > [!NOTE]
 > Available Templates: [File Browser](#file-browser)
 
+---
+
 <div align="center">
   <!-- Title -->
   <h3> File Browser </h3>
@@ -16,11 +18,11 @@ A collection of Docker container templates for [Unraid's](https://unraid.net/) [
 
   <!-- Links -->
   <p>
-    <a href="https://filebrowser.org/">Website</a> | 
+    <a href="https://github.com/filebrowser/filebrowser">Website</a> | 
     <a href="https://github.com/filebrowser/filebrowser">Repository</a> | 
     <a href="https://hub.docker.com/r/filebrowser/filebrowser">Registry</a> | 
     <a href="./filebrowser/filebrowser.xml">Template Source</a> | 
-    <a href="https://ca.unraid.net/apps/filebrowser-pnp-0567vsk1joshd4">Published Template</a>
+    <a href="https://ca.unraid.net/apps/filebrowser-0r1iuf40og2pi4">Published Template</a>
   </p>
 
   <!-- Description -->
@@ -28,6 +30,8 @@ A collection of Docker container templates for [Unraid's](https://unraid.net/) [
     File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users where each user can have its own directory.
   </p>
 </div>
+
+---
 
 ## Policy
 
