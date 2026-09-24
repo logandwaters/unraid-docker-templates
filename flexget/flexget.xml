@@ -9,7 +9,7 @@
   <Registry>https://hub.docker.com/r/flexget/flexget</Registry>
   <Branch>
     <Tag>develop</Tag>
-    <TagDescription>Pre-release builds from the development branch</TagDescription>
+    <TagDescription>Pre-release Builds from the Development Branch</TagDescription>
   </Branch>
   <Network>bridge</Network>
   <Shell>sh</Shell>
@@ -19,7 +19,7 @@
   <Description>A multipurpose automation tool, often used for downloading and processing media.</Description>
   <Overview>FlexGet is a multipurpose automation tool for automating content from sources such as RSS feeds, HTML pages, CSV files, search engines, and other sources. It can be used with torrents, NZBs, podcasts, comics, series, movies, and more.&#xD;
 &#xD;
-This template uses the official FlexGet Docker image.&#xD;
+This template uses the official FlexGet Docker image and runs without the Web UI, making it suitable for command-line or externally managed configurations.&#xD;
 &#xD;
 Install Instructions:&#xD;
 1. Run the commands outlined under "Additional Requirements".&#xD;
@@ -34,8 +34,12 @@ Docker Registry: https://hub.docker.com/r/flexget/flexget&#xD;
 Documentation: https://flexget.com&#xD;
 Report Software Issues: https://github.com/Flexget/Flexget/issues&#xD;
 Report Container Template Issue: https://github.com/logandwaters/unraid-docker-templates/issues</Overview>
-  <Requires>Before deployment, run the following in the Unraid terminal to create the config directory:&#x0A;&#x0A;mkdir -p /mnt/user/appdata/flexget/config&#x0A;&#x0A;Place your config.yml file in the directory before first run.</Requires>
-  <Category>Downloaders: Tools:Utilities Productivity:</Category>
+  <Requires>Before deployment, run the following in the Unraid terminal to create the config directory:&#xD;
+&#xD;
+mkdir -p /mnt/user/appdata/flexget/config&#xD;
+&#xD;
+Place your config.yml file in the directory before first run.</Requires>
+  <Category>Downloaders: MediaApp: Tools:Utilities Productivity:</Category>
   <Beta>false</Beta>
   <TemplateURL>https://raw.githubusercontent.com/logandwaters/unraid-docker-templates/main/flexget/flexget.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/logandwaters/unraid-docker-templates/main/flexget/icon.png</Icon>

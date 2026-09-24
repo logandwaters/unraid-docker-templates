@@ -17,12 +17,12 @@ A collection of Docker container templates for [Unraid's](https://unraid.net/) [
     <a href="https://github.com/Flexget/Flexget">Repository</a> | 
     <a href="https://hub.docker.com/r/flexget/flexget">Registry</a> | 
     <a href="./flexget/flexget.xml">Template Source</a> | 
-    <a href="">Published Template</a>
+    <a href="https://ca.unraid.net/apps/flexget-0kul7xw03qvpz4">Published Template</a>
   </p>
 
   <!-- Description -->
   <p>
-    FlexGet is a multipurpose automation tool for automating content from sources such as RSS feeds, HTML pages, CSV files, search engines, and other sources. It can be used with torrents, NZBs, podcasts, comics, series, movies, and more.
+    FlexGet is a multipurpose automation tool for automating content from sources such as RSS feeds, HTML pages, CSV files, search engines, and other sources. It can be used with torrents, NZBs, podcasts, comics, series, movies, and more. This template runs without the Web UI, making it suitable for command-line or externally managed configurations.
   </p>
 </div>
 
@@ -40,13 +40,13 @@ A collection of Docker container templates for [Unraid's](https://unraid.net/) [
     <a href="https://flexget.com">Website</a> | 
     <a href="https://github.com/Flexget/Flexget">Repository</a> | 
     <a href="https://hub.docker.com/r/flexget/flexget">Registry</a> | 
-    <a href="./flexget/flexget-webui.xml">Template Source</a> | 
-    <a href="">Published Template</a>
+    <a href="./flexget-webui/flexget-webui.xml">Template Source</a> | 
+    <a href="https://ca.unraid.net/apps/flexget-webui-0jji9701mi9ep4">Published Template</a>
   </p>
 
   <!-- Description -->
   <p>
-    FlexGet is a multipurpose automation tool for automating content from sources such as RSS feeds, HTML pages, CSV files, search engines, and other sources. It can be used with torrents, NZBs, podcasts, comics, series, movies, and more.
+    FlexGet is a multipurpose automation tool for automating content from sources such as RSS feeds, HTML pages, CSV files, search engines, and other sources. It can be used with torrents, NZBs, podcasts, comics, series, movies, and more. This template runs with the Web UI enabled, allowing FlexGet to be managed and monitored through a web browser.
   </p>
 </div>
 
@@ -73,6 +73,8 @@ A collection of Docker container templates for [Unraid's](https://unraid.net/) [
     File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview, rename and edit your files. It allows the creation of multiple users where each user can have its own directory.
   </p>
 </div>
+
+---
 
 ## Policy
 
