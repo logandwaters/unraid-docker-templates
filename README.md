@@ -16,14 +16,37 @@ A collection of Docker container templates for [Unraid's](https://unraid.net/) [
     <a href="https://flexget.com">Website</a> | 
     <a href="https://github.com/Flexget/Flexget">Repository</a> | 
     <a href="https://hub.docker.com/r/flexget/flexget">Registry</a> | 
-    <a href="./flexget/flexget.xml">Headless Template Source</a> | 
-    <a href="./flexget-webui/flexget-webui.xml">Web UI Template Source</a> | 
+    <a href="./flexget/flexget.xml">Template Source</a> | 
     <a href="">Published Template</a>
   </p>
 
   <!-- Description -->
   <p>
-    FlexGet is a multipurpose automation tool for content like torrents, nzbs, podcasts, comics, series, movies, etc. It can use different kinds of sources like RSS-feeds, html pages, csv files, search engines and there are even plugins for sites that do not provide any kind of useful feeds.
+    FlexGet is a multipurpose automation tool for automating content from sources such as RSS feeds, HTML pages, CSV files, search engines, and other sources. It can be used with torrents, NZBs, podcasts, comics, series, movies, and more.
+  </p>
+</div>
+
+---
+
+<div align="center">
+  <!-- Title -->
+  <h3> FlexGet Web UI</h3>
+
+  <!-- Icon -->
+  <img src="https://github.com/logandwaters/unraid-docker-templates/blob/main/flexget-webui/icon.png?raw=true" alt="FlexGet Icon" height="100" />
+
+  <!-- Links -->
+  <p>
+    <a href="https://flexget.com">Website</a> | 
+    <a href="https://github.com/Flexget/Flexget">Repository</a> | 
+    <a href="https://hub.docker.com/r/flexget/flexget">Registry</a> | 
+    <a href="./flexget/flexget-webui.xml">Template Source</a> | 
+    <a href="">Published Template</a>
+  </p>
+
+  <!-- Description -->
+  <p>
+    FlexGet is a multipurpose automation tool for automating content from sources such as RSS feeds, HTML pages, CSV files, search engines, and other sources. It can be used with torrents, NZBs, podcasts, comics, series, movies, and more.
   </p>
 </div>
 

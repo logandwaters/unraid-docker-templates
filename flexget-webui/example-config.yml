@@ -1,0 +1,15 @@
+# FlexGet Example Configuration
+# Documentation: https://flexget.com/Configuration
+#
+# Ensure you rename the file to config.yml before use
+
+web_server: yes
+
+tasks:
+  example:
+    rss: http://mysite.com/myfeed.rss
+    series:
+      - My Favorite Show
+      - Another Good Show:
+          quality: 720p
+    download: /downloads
