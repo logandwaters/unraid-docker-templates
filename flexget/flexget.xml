@@ -1,0 +1,48 @@
+<!-- Unraid Docker Container Template for FlexGet by logandwaters -->
+<Container version="2">
+  <Changes>
+  [b]2026-09-24:[/b] v1.0.0 - Initial release of FlexGet template.
+  </Changes>
+  <Name>flexget</Name>
+  <License>MIT</License>
+  <Repository>flexget/flexget</Repository>
+  <Registry>https://hub.docker.com/r/flexget/flexget</Registry>
+  <Branch>
+    <Tag>develop</Tag>
+    <TagDescription>Pre-release builds from the development branch</TagDescription>
+  </Branch>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Flexget/Flexget/discussions</Support>
+  <Project>https://github.com/Flexget/Flexget</Project>
+  <Description>A multipurpose automation tool, often used for downloading and processing media.</Description>
+  <Overview>FlexGet is a multipurpose automation tool for automating content from sources such as RSS feeds, HTML pages, CSV files, search engines, and other sources. It can be used with torrents, NZBs, podcasts, comics, series, movies, and more.&#xD;
+&#xD;
+This template uses the official FlexGet Docker image.&#xD;
+&#xD;
+Install Instructions:&#xD;
+1. Run the commands outlined under "Additional Requirements".&#xD;
+2. Place your config.yml file under /mnt/user/appdata/flexget/config or use the example file from https://github.com/logandwaters/unraid-docker-templates/blob/main/flexget/example-config.yml&#xD;
+3. Set the download directory path, configure any other settings as needed, then pull and deploy the container.&#xD;
+4. Enter the container's shell by running "docker exec -it flexget /bin/sh" in the Unraid terminal.&#xD;
+5. Validate your configuration by running "flexget check" in the container shell.&#xD;
+&#xD;
+Helpful links:&#xD;
+GitHub Repo: https://github.com/Flexget/Flexget&#xD;
+Docker Registry: https://hub.docker.com/r/flexget/flexget&#xD;
+Documentation: https://flexget.com&#xD;
+Report Software Issues: https://github.com/Flexget/Flexget/issues&#xD;
+Report Container Template Issue: https://github.com/logandwaters/unraid-docker-templates/issues</Overview>
+  <Requires>Before deployment, run the following in the Unraid terminal to create the config directory:&#x0A;&#x0A;mkdir -p /mnt/user/appdata/flexget/config&#x0A;&#x0A;Place your config.yml file in the directory before first run.</Requires>
+  <Category>Downloaders: Tools:Utilities Productivity:</Category>
+  <Beta>false</Beta>
+  <TemplateURL>https://raw.githubusercontent.com/logandwaters/unraid-docker-templates/main/flexget/flexget.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/logandwaters/unraid-docker-templates/main/flexget/icon.png</Icon>
+  <PostArgs>daemon start</PostArgs>
+  <!-- Volume Configuration -->
+  <Config Name="Path to Config" Target="/config" Default="/mnt/user/appdata/flexget/config" Description="Directory where configuration and settings are stored." Type="Path" Display="always" Required="true"/>
+  <Config Name="Path to Download Directory" Target="/downloads" Default="/mnt/user/appdata/flexget/downloads" Description="Directory where downloaded files are stored." Type="Path" Display="always" Required="true"/>
+  <!-- Environment Variables -->
+  <Config Name="Timezone" Target="TZ" Default="UTC" Description="Container timezone (e.g., America/New_York, Europe/London)" Type="Variable" Display="always" Required="false"/>
+</Container>
